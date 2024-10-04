@@ -48,7 +48,8 @@ python experiments/data/ligand/process_kinodata.py --basedir /path/to/kinodata_f
 ```
 
 ## PDBQT files for docking
-Create the pdbqt files for the test complexes
+Create the pdbqt files for the test complexes.
+
 Activate the mgltools environment
 ```bash
 conda activate mgltools
@@ -101,7 +102,6 @@ Modify scripts/generate_ligands_multi.sl (scripts/generate_ligands_multi_kinodat
     - num-ligands-per-pocket-to-sample: 100 [default on CrossDocked 100]
     - num-ligands-per-pocket-to-save: 100 [default on CrossDocked 100]
     - max-sample-iter: 50 [max. number of iterations to fulfill num-ligands-per-pocket-to-sample]
-    - batch-size: 40 
     - n-nodes-bias: 0 [increase sampled/fixed ligand size by the number provided]
     - vary-n-nodes: [0, n-nodes-bias] is added randomly (uniform)
     - fix-n-nodes [whether or not to use the ground truth ligand size for number of atoms (hence no sampling of ligand sizes)]
